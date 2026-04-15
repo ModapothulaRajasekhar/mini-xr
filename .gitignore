@@ -1,0 +1,15 @@
+# Binaries
+*.o
+*.out
+*.exe
+cfgmgrd/cfgmgrd
+ifmgrd/ifmgrd
+ospfd/ospfd
+protod/protod
+ribd/ribd
+
+# Build folders
+build/
+
+# Logs
+*.log

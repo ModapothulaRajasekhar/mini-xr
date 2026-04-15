@@ -1,0 +1,17 @@
+[Unit]
+Description=Mini-XR Protocol Daemon
+After=network.target redis-server.service
+Requires=redis-server.service
+
+[Service]
+Type=simple
+ExecStart=/home/vcti/mini-xr/protod/protod
+Restart=always
+RestartSec=2
+User=vcti
+WorkingDirectory=/home/vcti/mini-xr
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
